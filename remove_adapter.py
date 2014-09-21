@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-It trims (finds and/or removes by trimming) the paired-reads (FASTQ file
+It trims (finds and removes automatically by trimming) the paired-reads (FASTQ file
 produced by Illumina Solexa) which overlap and contain the adapter. The adapter
 is found automatically. Also the partial overlapping between a short read and
 the adapter sequence is handled.
@@ -934,7 +934,7 @@ def main():
     #command line parsing
     usage = "%prog [options] --input_1 <fastq_file_read_1> --input_2 <fastq_file_read_2> --output_2 <fastq_file_1> --output_2 <fastq_file_2> "
 
-    description = """It trims (finds and/or removes by trimming) the paired-reads (FASTQ file
+    description = """It trims (finds and removes automatically the adapter by trimming) the paired-reads (FASTQ file
 produced by Illumina Solexa) which overlap and contain the adapter. The adapter
 is found automatically. Also the partial overlapping between a short read and
 the adapter sequence is handled."""
