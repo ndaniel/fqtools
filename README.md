@@ -7,13 +7,13 @@ Python tools for FASTQ processing
 
 * **remove_adapter.py** detects the adapter automatically and removes it from the reads by trimming it
 
-        overlap.py in.fq > out.fa
+        remove_adapter.py in.fq > out.fa
 
 * **remove_str.py** removes the reads which contain short tandem repeats regions
 
-        overlap.py in.fq > out.fa
+        remove_str.py in.fq > out.fa
 
 * **compress-reads-ids.py** lossy compression of reads ids
 
-        overlap.py in.fq > out.fa
+        compress-reads-ids.py in.fq > out.fa
 
